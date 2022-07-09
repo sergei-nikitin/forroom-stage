@@ -99,7 +99,7 @@ in 60 business days</h3>
 				<span></span>
 			</div>
 
-			<div class="repairs__scroll">
+			<div class="repairs__scroll" data-start-at="50%">
 				<div class="repairs__images">
 					<div class="repairs__img">
 						<div class="repairs__image ib">
