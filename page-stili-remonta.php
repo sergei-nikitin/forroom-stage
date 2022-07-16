@@ -62,58 +62,112 @@ Template Name: Стили ремонта
 					</div>
 				</div>
 
-<div class="header__anim-background">
-	<div class="header__slider">
-		<div class="header__slide">
-			<div class="header__cover">
-				<span><span><span></span></span></span>
-				<div class="header__cover-inner">
-					<span><span><span></span></span></span>
-					<span><span><span></span></span></span>
-					<span><span><span></span></span></span>
-					<span><span><span></span></span></span>
+				<div class="header__anim-backgrounds">
+					<div class="header__anim-background">
+						<div class="header__slider">
+							<div class="header__slide">
+								<div class="header__cover">
+									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
+									<span><span><span></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
+									<span><span><span></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg2.jpg" alt="2" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg2.jpg" alt="2" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg2.jpg" alt="2" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg2.jpg" alt="2" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg2.jpg" alt="2" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg2.jpg" alt="2" class="ib_use"></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg1.jpg" alt="1" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg1.jpg" alt="1" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg1.jpg" alt="1" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg1.jpg" alt="1" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg1.jpg" alt="1" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg1.jpg" alt="1" class="ib_use"></span></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__anim-background">
+						<div class="header__slider">
+							<div class="header__slide">
+								<div class="header__cover">
+									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
+									<span><span><span></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
+									<span><span><span></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg3.jpg" alt="3" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg3.jpg" alt="3" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg3.jpg" alt="3" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg3.jpg" alt="3" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg3.jpg" alt="3" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg3.jpg" alt="3" class="ib_use"></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg4.jpg" alt="4" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg4.jpg" alt="4" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg4.jpg" alt="4" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg4.jpg" alt="4" class="ib_use"></span></span></span>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg4.jpg" alt="4" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg4.jpg" alt="4" class="ib_use"></span></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<span><span><span></span></span></span>
-			</div>
-		</div>
-		<div class="header__slide">
-			<div class="header__cover hide">
-				<span><span><span></span></span></span>
-				<div class="header__cover-inner">
-					<span><span><span></span></span></span>
-					<span><span><span></span></span></span>
-					<span><span><span></span></span></span>
-					<span><span><span></span></span></span>
-				</div>
-				<span><span><span></span></span></span>
-			</div>
-		</div>
-		<div class="header__slide">
-			<div class="header__cover hide">
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta2.jpg" alt="2" class="ib_use"></span></span></span>
-				<div class="header__cover-inner">
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta2.jpg" alt="2" class="ib_use"></span></span></span>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta2.jpg" alt="2" class="ib_use"></span></span></span>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta2.jpg" alt="2" class="ib_use"></span></span></span>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta2.jpg" alt="2" class="ib_use"></span></span></span>
-				</div>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta2.jpg" alt="2" class="ib_use"></span></span></span>
-			</div>
-		</div>
-		<div class="header__slide">
-			<div class="header__cover hide">
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta1.jpg" alt="1" class="ib_use"></span></span></span>
-				<div class="header__cover-inner">
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta1.jpg" alt="1" class="ib_use"></span></span></span>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta1.jpg" alt="1" class="ib_use"></span></span></span>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta1.jpg" alt="1" class="ib_use"></span></span></span>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta1.jpg" alt="1" class="ib_use"></span></span></span>
-				</div>
-				<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta1.jpg" alt="1" class="ib_use"></span></span></span>
-			</div>
-		</div>
-	</div>
-</div>
 			</div>
 
 			<!-- Menu -->
@@ -381,7 +435,7 @@ Template Name: Стили ремонта
 			<div class="order__inner">
 				<div class="order__image ib">
 					<!-- <iframe width="100%" height="100%" style="width: 100%; height: 100%; border: none; max-width: 100%;" frameborder="0" allowfullscreen allow="xr-spatial-tracking; gyroscope; accelerometer" scrolling="no" src="https://kuula.co/share/collection/7qdxw?logo=1&info=1&fs=0&vr=0&sd=1&autorotate=0.16&thumbs=0&alpha=0.60&inst=0"></iframe> -->
-					<img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta-materials.jpg" alt="stili-remonta-materials" class="ib_use">
+					<img src="<?php echo get_template_directory_uri() ?>/source/new-img/stili-remonta/bg-materials.jpg" alt="stili-remonta-materials" class="ib_use">
 				</div>
 
 				<div class="order__content">

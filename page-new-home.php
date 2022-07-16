@@ -62,54 +62,109 @@ Template Name: new-home
 					</div>
 				</div>
 
-				<div class="header__anim-background">
-					<div class="header__slider">
-						<div class="header__slide">
-							<div class="header__cover">
-								<span><span><span></span></span></span>
-								<div class="header__cover-inner">
+				<div class="header__anim-backgrounds">
+					<div class="header__anim-background">
+						<div class="header__slider">
+							<div class="header__slide">
+								<div class="header__cover">
 									<span><span><span></span></span></span>
-									<span><span><span></span></span></span>
-									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
 									<span><span><span></span></span></span>
 								</div>
-								<span><span><span></span></span></span>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
+									<span><span><span></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
+								</div>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+								</div>
 							</div>
 						</div>
-						<div class="header__slide">
-							<div class="header__cover hide">
-								<span><span><span></span></span></span>
-								<div class="header__cover-inner">
+					</div>
+
+					<div class="header__anim-background">
+						<div class="header__slider">
+							<div class="header__slide">
+								<div class="header__cover">
 									<span><span><span></span></span></span>
-									<span><span><span></span></span></span>
-									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
 									<span><span><span></span></span></span>
 								</div>
-								<span><span><span></span></span></span>
 							</div>
-						</div>
-						<div class="header__slide">
-							<div class="header__cover hide">
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
-								<div class="header__cover-inner">
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+										<span><span><span></span></span></span>
+									</div>
+									<span><span><span></span></span></span>
 								</div>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG2.jpg" alt="2" class="ib_use"></span></span></span>
 							</div>
-						</div>
-						<div class="header__slide">
-							<div class="header__cover hide">
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
-								<div class="header__cover-inner">
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG3.jpg" alt="3" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG3.jpg" alt="3" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG3.jpg" alt="3" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG3.jpg" alt="3" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG3.jpg" alt="3" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG3.jpg" alt="3" class="ib_use"></span></span></span>
 								</div>
-								<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG1.jpg" alt="1" class="ib_use"></span></span></span>
+							</div>
+							<div class="header__slide">
+								<div class="header__cover hide">
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG4.jpg" alt="4" class="ib_use"></span></span></span>
+									<div class="header__cover-inner">
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG4.jpg" alt="4" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG4.jpg" alt="4" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG4.jpg" alt="4" class="ib_use"></span></span></span>
+										<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG4.jpg" alt="4" class="ib_use"></span></span></span>
+									</div>
+									<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/header-images-main/BG4.jpg" alt="4" class="ib_use"></span></span></span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -117,27 +172,7 @@ Template Name: new-home
 
 			</div>
 
-			<!-- Menu -->
-<!-- 	
-			<div class="menus menus_home">
-				<div class="menu">
-					<ul class="menu__wrap">
-						<li><a href="#"><span class="iconify" data-icon="ion:folder-open-outline"></span> пакеты ремонта</a></li>
-						<li><a href="#"><span class="iconify" data-icon="ion:bed-outline"></span> вторичного жилья</a></li>
-						<li><a href="#"><span class="iconify" data-icon="ion:key-outline"></span> под сдачу</a></li>
-						<li><a href="#"><span class="iconify" data-icon="ion:color-palette-outline"></span> дизайн интерьера</a></li>
-					</ul>
-				</div>
 
-				<div class="menu">
-					<ul class="menu__wrap">
-						<li><a href="#"><span class="iconify" data-icon="ion:folder-open-outline"></span> пакеты ремонта</a></li>
-						<li><a href="#"><span class="iconify" data-icon="ion:bed-outline"></span> вторичного жилья</a></li>
-						<li><a href="#"><span class="iconify" data-icon="ion:key-outline"></span> ремонт под сдачу</a></li>
-						<li><a href="#"><span class="iconify" data-icon="ion:color-palette-outline"></span> дизайн интерьера</a></li>
-					</ul>
-				</div>
-			</div> -->
 		</header>
 
 			<!-- Repairs -->

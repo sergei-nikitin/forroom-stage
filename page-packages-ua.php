@@ -75,19 +75,115 @@ Template Name: Пакеты ремонты UA
 					</div>
 				</div>
 
-				<div class="header__anim-background">
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide ib">
-								<img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg1.jpg" alt="1" class="ib_use">
-							</div>
-
-							<div class="swiper-slide ib">
-								<img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg2.jpg" alt="2" class="ib_use">
-							</div>
-						</div>
+<div class="header__anim-backgrounds">
+	<div class="header__anim-background">
+		<div class="header__slider">
+			<div class="header__slide">
+				<div class="header__cover">
+					<span><span><span></span></span></span>
+					<div class="header__cover-inner">
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
 					</div>
+					<span><span><span></span></span></span>
 				</div>
+			</div>
+			<div class="header__slide">
+				<div class="header__cover hide">
+					<span><span><span></span></span></span>
+					<div class="header__cover-inner">
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+					</div>
+					<span><span><span></span></span></span>
+				</div>
+			</div>
+			<div class="header__slide">
+				<div class="header__cover hide">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg2.jpg" alt="2" class="ib_use"></span></span></span>
+					<div class="header__cover-inner">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg2.jpg" alt="2" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg2.jpg" alt="2" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg2.jpg" alt="2" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg2.jpg" alt="2" class="ib_use"></span></span></span>
+					</div>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg2.jpg" alt="2" class="ib_use"></span></span></span>
+				</div>
+			</div>
+
+			<div class="header__slide">
+				<div class="header__cover hide">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg1.jpg" alt="1" class="ib_use"></span></span></span>
+					<div class="header__cover-inner">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg1.jpg" alt="1" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg1.jpg" alt="1" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg1.jpg" alt="1" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg1.jpg" alt="1" class="ib_use"></span></span></span>
+					</div>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg1.jpg" alt="1" class="ib_use"></span></span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__anim-background">
+		<div class="header__slider">
+			<div class="header__slide">
+				<div class="header__cover">
+					<span><span><span></span></span></span>
+					<div class="header__cover-inner">
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+					</div>
+					<span><span><span></span></span></span>
+				</div>
+			</div>
+			<div class="header__slide">
+				<div class="header__cover hide">
+					<span><span><span></span></span></span>
+					<div class="header__cover-inner">
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+						<span><span><span></span></span></span>
+					</div>
+					<span><span><span></span></span></span>
+				</div>
+			</div>
+			<div class="header__slide">
+				<div class="header__cover hide">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg3.jpg" alt="3" class="ib_use"></span></span></span>
+					<div class="header__cover-inner">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg3.jpg" alt="3" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg3.jpg" alt="3" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg3.jpg" alt="3" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg3.jpg" alt="3" class="ib_use"></span></span></span>
+					</div>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg3.jpg" alt="3" class="ib_use"></span></span></span>
+				</div>
+			</div>
+
+			<div class="header__slide">
+				<div class="header__cover hide">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg4.jpg" alt="4" class="ib_use"></span></span></span>
+					<div class="header__cover-inner">
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg4.jpg" alt="4" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg4.jpg" alt="4" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg4.jpg" alt="4" class="ib_use"></span></span></span>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg4.jpg" alt="4" class="ib_use"></span></span></span>
+					</div>
+					<span><span><span class="ib"><img src="<?php echo get_template_directory_uri() ?>/source/new-img/rep-packages/packages-bg4.jpg" alt="4" class="ib_use"></span></span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 			</div>
 
 			<!-- Menu -->

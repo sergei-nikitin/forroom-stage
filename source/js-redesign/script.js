@@ -24,9 +24,19 @@ const getPos = (elem) => {
 let onCloseTestPopup = () => {};
 let onCloseAnyPopup = () => {};
 
-const vh = window.innerHeight * 0.01;
 let prevWidth = document.documentElement.clientWidth;
+const vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('DOMContentLoaded', (e) => {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  prevWidth = document.documentElement.clientWidth;
+});
+setTimeout(() => {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  prevWidth = document.documentElement.clientWidth;
+}, 1000);
 window.addEventListener('resize', (e) => {
   if (document.documentElement.clientWidth !== prevWidth) {
     const vh = window.innerHeight * 0.01;
@@ -400,49 +410,112 @@ if (animItems.length > 0) {
 
 /* Slide With Hiding Content */
 
-const headerCover = document.querySelectorAll('.header__cover');
+const headerBackgrounds = document.querySelectorAll('.header__anim-background');
 const headerSlider = document.querySelector('.header__slider');
-const headerSlide = document.querySelectorAll('.header__slide');
 
 window.addEventListener('DOMContentLoaded', (e) => {
   if (headerSlider) {
-    let interval = null;
-    let delay = 2000;
-    const speed = delay * 2;
-    let withUpClass = null;
-    let prev = 0;
-    let slidesOffset = [0, 0];
-    const spanImgBg = () => {
-      for (let i = 2; i < headerSlide.length; i++) {
-        slidesOffset[i] = 0;
-        const headerColumns = headerSlide[i].querySelectorAll(
-          '.header__cover-inner > span > span > span, .header__cover > span > span > span',
-        );
-        const img = new Image();
-        img.src = headerColumns[0].style.backgroundImage
-          .replace(/url\(|\)$/gi, '')
-          .replace('"', '')
-          .replace('"', '');
-        let bgImgWidth = +img.width;
-        let bgImgHeight = +img.height;
-        if (bgImgHeight > bgImgWidth) {
-          const proportion =
-            +((bgImgWidth / bgImgHeight) * 100).toFixed() + 100;
-          for (let y = 0; y < headerColumns.length; y++) {
-            let value = (
-              (document.documentElement.clientWidth / 100) *
-              proportion
+    for (let o = 0; o < headerBackgrounds.length; o++) {
+      const headerCover =
+        headerBackgrounds[o].querySelectorAll('.header__cover');
+      const headerSlide =
+        headerBackgrounds[o].querySelectorAll('.header__slide');
+      let interval = null;
+      let delay = 2000;
+      const speed = delay * 2;
+      let withUpClass = null;
+      let prev = 0;
+      let slidesOffset = [0, 0];
+      const spanImgBg = () => {
+        for (let i = 2; i < headerSlide.length; i++) {
+          slidesOffset[i] = 0;
+          const headerColumns = headerSlide[i].querySelectorAll(
+            '.header__cover-inner > span > span > span, .header__cover > span > span > span',
+          );
+          const img = new Image();
+          img.src = headerColumns[0].style.backgroundImage
+            .replace(/url\(|\)$/gi, '')
+            .replace('"', '')
+            .replace('"', '');
+          let bgImgWidth = +img.width;
+          let bgImgHeight = +img.height;
+          if (bgImgHeight > bgImgWidth) {
+            const proportion =
+              +((bgImgWidth / bgImgHeight) * 100).toFixed() + 100;
+            for (let y = 0; y < headerColumns.length; y++) {
+              let value = (
+                (document.documentElement.clientWidth / 100) *
+                proportion
+              ).toFixed();
+              if (value < document.documentElement.clientHeight) {
+                // const style = headerColumns[y].getAttribute('style');
+                // value = (document.documentElement.clientWidth / 100 * proportion).toFixed();
+                // headerColumns[y].setAttribute('style', style + "background-size: " + value + 'px calc(var(--vh, 1vh)*100);');
+                // slidesOffset[i] = +((value - document.documentElement.clientWidth) / 2).toFixed() < 0 ? 0 : +((value - document.documentElement.clientWidth) / 2).toFixed();
+                headerColumns[y].style.backgroundSize =
+                  value + 'px calc(var(--vh, 1vh)*100)';
+                slidesOffset[i] =
+                  +(
+                    (value - document.documentElement.clientWidth) /
+                    2
+                  ).toFixed() < 0
+                    ? 0
+                    : +(
+                        (value - document.documentElement.clientWidth) /
+                        2
+                      ).toFixed();
+                continue;
+              }
+              headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
+              slidesOffset[i] = 0;
+            }
+            continue;
+          }
+          if (bgImgWidth > bgImgHeight) {
+            const proportion =
+              +((100 - (bgImgHeight / bgImgWidth) * 100) * 2).toFixed() + 100;
+            const proportionHeight = +(
+              (bgImgHeight / bgImgWidth) *
+              100
             ).toFixed();
-            if (value < document.documentElement.clientHeight) {
-              // const style = headerColumns[y].getAttribute('style');
-              // value = (document.documentElement.clientWidth / 100 * proportion).toFixed();
-              // headerColumns[y].setAttribute('style', style + "background-size: " + value + 'px calc(var(--vh, 1vh)*100);');
-              // slidesOffset[i] = +((value - document.documentElement.clientWidth) / 2).toFixed() < 0 ? 0 : +((value - document.documentElement.clientWidth) / 2).toFixed();
+            for (let y = 0; y < headerColumns.length; y++) {
+              //let value = (document.documentElement.clientWidth / 100 * proportion).toFixed();
+              // if (value > document.documentElement.clientHeight) {
+              // 	value = (document.documentElement.clientHeight / 100 * proportion).toFixed();
+              // 	headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
+              // 	slidesOffset[i] = 0;
+              // 	continue;
+              // 	// value = (document.documentElement.clientHeight / 100 * proportion).toFixed();
+              // 	// headerColumns[y].style.backgroundSize = value + 'px calc(var(--vh, 1vh)*100)';
+              // 	// slidesOffset[i] = +((value - document.documentElement.clientWidth) / 2).toFixed() < 0 ? 0 : +((value - document.documentElement.clientWidth) / 2).toFixed();
+              // 	// continue;
+              // }
+              // if (bgImgWidth < document.documentElement.clientWidth) {
+              // 	value = (bgImgWidth / 100 * proportion).toFixed();
+              // 	headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
+              // 	slidesOffset[i] = 0;
+              // 	continue;
+              // }
+              //headerColumns[y].style.backgroundSize = value + 'px calc(var(--vh, 1vh)*100)';
+              //slidesOffset[i] = +((value - document.documentElement.clientWidth) / 2).toFixed() < 0 ? 0 : +((value - document.documentElement.clientWidth) / 2).toFixed();
+              let value = (
+                (document.documentElement.clientHeight / 100) *
+                proportion
+              ).toFixed();
+              if (value < document.documentElement.clientWidth) {
+                value = (
+                  (document.documentElement.clientWidth / 100) *
+                  proportionHeight
+                ).toFixed();
+                headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
+                slidesOffset[i] = 0;
+                continue;
+              }
               headerColumns[y].style.backgroundSize =
                 value + 'px calc(var(--vh, 1vh)*100)';
               slidesOffset[i] =
                 +(
-                  (value - document.documentElement.clientWidth) /
+                  (value - document.documentElement.clientHeight) /
                   2
                 ).toFixed() < 0
                   ? 0
@@ -450,137 +523,87 @@ window.addEventListener('DOMContentLoaded', (e) => {
                       (value - document.documentElement.clientWidth) /
                       2
                     ).toFixed();
-              continue;
             }
-            headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
-            slidesOffset[i] = 0;
+            continue;
           }
-          continue;
         }
-        if (bgImgWidth > bgImgHeight) {
-          const proportion =
-            +((100 - (bgImgHeight / bgImgWidth) * 100) * 2).toFixed() + 100;
-          const proportionHeight = +(
-            (bgImgHeight / bgImgWidth) *
-            100
-          ).toFixed();
-          for (let y = 0; y < headerColumns.length; y++) {
-            //let value = (document.documentElement.clientWidth / 100 * proportion).toFixed();
-            // if (value > document.documentElement.clientHeight) {
-            // 	value = (document.documentElement.clientHeight / 100 * proportion).toFixed();
-            // 	headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
-            // 	slidesOffset[i] = 0;
-            // 	continue;
-            // 	// value = (document.documentElement.clientHeight / 100 * proportion).toFixed();
-            // 	// headerColumns[y].style.backgroundSize = value + 'px calc(var(--vh, 1vh)*100)';
-            // 	// slidesOffset[i] = +((value - document.documentElement.clientWidth) / 2).toFixed() < 0 ? 0 : +((value - document.documentElement.clientWidth) / 2).toFixed();
-            // 	// continue;
-            // }
-            // if (bgImgWidth < document.documentElement.clientWidth) {
-            // 	value = (bgImgWidth / 100 * proportion).toFixed();
-            // 	headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
-            // 	slidesOffset[i] = 0;
-            // 	continue;
-            // }
-            //headerColumns[y].style.backgroundSize = value + 'px calc(var(--vh, 1vh)*100)';
-            //slidesOffset[i] = +((value - document.documentElement.clientWidth) / 2).toFixed() < 0 ? 0 : +((value - document.documentElement.clientWidth) / 2).toFixed();
-            let value = (
-              (document.documentElement.clientHeight / 100) *
-              proportion
-            ).toFixed();
-            if (value < document.documentElement.clientWidth) {
-              value = (
-                (document.documentElement.clientWidth / 100) *
-                proportionHeight
-              ).toFixed();
-              headerColumns[y].style.backgroundSize = '100vw ' + value + 'px';
-              slidesOffset[i] = 0;
-              continue;
-            }
-            headerColumns[y].style.backgroundSize =
-              value + 'px calc(var(--vh, 1vh)*100)';
-            slidesOffset[i] =
-              +((value - document.documentElement.clientHeight) / 2).toFixed() <
-              0
-                ? 0
-                : +(
-                    (value - document.documentElement.clientWidth) /
-                    2
-                  ).toFixed();
-          }
-          continue;
-        }
-      }
-    };
-    spanImgBg();
-    window.addEventListener('resize', (e) => {
+      };
       spanImgBg();
-      if (document.documentElement.clientWidth >= 1023) {
-        delay = 2000;
-      } else {
-        delay = 1200;
-      }
-    });
-    let startPrev = false;
-    const changeSlide = () => {
-      headerSlider.classList.add('changing');
-      if (withUpClass !== null) {
-        headerCover[withUpClass].classList.remove('up');
-      }
-      prev += 1;
-      if (prev === headerCover.length) {
-        prev = 2;
-        startPrev = true;
-        if (headerCover.length === 3) {
-          clearInterval(interval);
-          return;
+      window.addEventListener('resize', (e) => {
+        spanImgBg();
+        if (document.documentElement.clientWidth >= 1023) {
+          delay = 2000;
+        } else {
+          delay = 1200;
         }
-      }
-      const value = slidesOffset[prev] === undefined ? 0 : slidesOffset[prev];
-      if (prev % 2 === 0) {
-        document.documentElement.style.setProperty(
-          '--firstSlide',
-          `-${value}px`,
-        );
-      } else {
-        document.documentElement.style.setProperty(
-          '--secondSlide',
-          `-${value}px`,
-        );
-      }
-      let prevLoc = prev - 1;
-      if (startPrev) {
-        prevLoc = headerCover.length - 1;
-        startPrev = false;
-        headerCover[prev].classList.add('up');
-        withUpClass = prev;
-      }
+      });
+      let startPrev = false;
+      const changeSlide = () => {
+        headerSlider.classList.add('changing');
+        if (withUpClass !== null) {
+          headerSlide[withUpClass].classList.remove('dark');
+          headerCover[withUpClass].classList.remove('up');
+        }
+        prev += 1;
+        if (prev === headerCover.length) {
+          prev = 2;
+          startPrev = true;
+          if (headerCover.length === 3) {
+            clearInterval(interval);
+            return;
+          }
+        }
+        const value = slidesOffset[prev] === undefined ? 0 : slidesOffset[prev];
+        if (prev % 2 === 0) {
+          document.documentElement.style.setProperty(
+            '--firstSlide',
+            `-${value}px`,
+          );
+        } else {
+          document.documentElement.style.setProperty(
+            '--secondSlide',
+            `-${value}px`,
+          );
+        }
+        let prevLoc = prev - 1;
+        if (startPrev) {
+          prevLoc = headerCover.length - 1;
+          startPrev = false;
+          headerSlide[prev].classList.add('dark');
+          headerCover[prev].classList.add('up');
+          withUpClass = prev;
+        }
+        setTimeout(() => {
+          headerCover[prevLoc].classList.add('hide');
+          headerSlider.classList.remove('changing');
+        }, delay);
+        if (prev > headerCover.length - 1) {
+          headerSlide[prev].classList.add('dark');
+          headerCover[prev].classList.add('up');
+          withUpClass = prev;
+          const value =
+            slidesOffset[prev - 1] === undefined ? 0 : slidesOffset[prev - 1];
+          document.documentElement.style.setProperty(
+            '--lastSlide',
+            `-${value}px`,
+          );
+        }
+        headerCover[prev].classList.remove('hide');
+      };
+      headerSlider.classList.add('changing');
       setTimeout(() => {
-        headerCover[prevLoc].classList.add('hide');
         headerSlider.classList.remove('changing');
       }, delay);
-      if (prev > headerCover.length - 1) {
-        headerCover[prev].classList.add('up');
-        withUpClass = prev;
-        const value =
-          slidesOffset[prev - 1] === undefined ? 0 : slidesOffset[prev - 1];
-        document.documentElement.style.setProperty(
-          '--lastSlide',
-          `-${value}px`,
-        );
-      }
-      headerCover[prev].classList.remove('hide');
-    };
-    headerSlider.classList.add('changing');
-    setTimeout(() => {
-      headerSlider.classList.remove('changing');
-    }, delay);
-    changeSlide();
-    setTimeout(() => {
       changeSlide();
-    }, delay * 2);
-    if (headerCover.length > 1) {
-      interval = setInterval(changeSlide, speed + delay + 4000);
+      setTimeout(() => {
+        changeSlide();
+      }, delay * 2);
+      if (headerCover.length > 1) {
+        interval = setInterval(changeSlide, speed + delay + 4000);
+      }
+      setTimeout(() => {
+        headerSlide[headerSlide.length - 1].classList.add('dark');
+      }, delay * 2);
     }
   }
 });
