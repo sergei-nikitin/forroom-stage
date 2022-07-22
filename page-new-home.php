@@ -59,6 +59,7 @@ Template Name: new-home
 							<div class="header__btn">
 							<a href="https://forroom.com.ua/ru/ru/packages/#stili" class="btn btn_big-fill">выбрать пакет ремонта</a>
 						</div>
+				
 					</div>
 				</div>
 
@@ -174,6 +175,10 @@ Template Name: new-home
 
 
 		</header>
+
+				<!-- <form>
+							<input id="intl-tel" type="tel" />
+						</form> -->
 
 			<!-- Repairs -->
 

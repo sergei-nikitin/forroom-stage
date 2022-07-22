@@ -16,7 +16,11 @@
 							<label>
 								<span>Контактные данные</span>
 								<div class="block-input">
-									<input data-tel-input required type="tel" name="phone" class="base-popup__tel" placeholder="+380 (__) ___ - __ - __"><!-- class="success error" -->
+								<input id="intl-tel" type="tel" name="phone" />
+								<span id="valid-msg" class="hide"></span>
+								<span id="error-msg" class="hide"></span>
+									<!-- <input data-tel-input required type="tel" name="phone" class="base-popup__tel" placeholder="+380 (__) ___ - __ - __" maxlength="20" minlength="8"> -->
+									<!-- class="success error" -->
 									<p class="block-input__text">Неверный формат номера</p>
 								</div>
 							</label>
@@ -40,7 +44,7 @@
 							</label>
 						</div>
 							<input name="interest" type="hidden" class="hidden-input-actions">
-						<button id="call-popup-btn" type="submit" class="btn btn_big-fill base-popup__btn">оставить заявку</button>
+						<button id="call-popup-btn" type="submit" class="btn btn_big-fill base-popup__btn btn-submit">оставить заявку</button>
 					</form>
 				</div>
 			</div>

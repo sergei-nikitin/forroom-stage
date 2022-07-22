@@ -3,6 +3,7 @@ let activeFixedMenu = false;
 let fixedPadding = document.querySelectorAll('.fixed-padding');
 const body = document.querySelector('body');
 const nav = document.querySelector('#nav');
+let cantScrollHeader = false;
 const getCoords = (elem) => {
   const box = elem.getBoundingClientRect();
   return {
@@ -77,6 +78,7 @@ const anchors = document.querySelectorAll('a');
 
 for (let i = 0, length = anchors.length; i < length; i++) {
   anchors[i].addEventListener('click', function (e) {
+    cantScrollHeader = true;
     if (
       anchors[i].getAttribute('href') !== '#' &&
       anchors[i].getAttribute('href').trim() &&
@@ -101,10 +103,20 @@ for (let i = 0, length = anchors.length; i < length; i++) {
           return document.querySelector(anchorID).offsetTop;
         }
       }
-
-      window.scrollTo({
-        top: scrollValue(),
-        behavior: 'smooth',
+      const scrollToPos = (offset, callback) => {
+        const fixedOffset = offset.toFixed();
+        const onScroll = () => {
+          if (window.pageYOffset.toFixed() === fixedOffset) {
+            window.removeEventListener('scroll', onScroll);
+            callback();
+          }
+        };
+        window.addEventListener('scroll', onScroll);
+        onScroll();
+        jQuery('html').animate({ scrollTop: fixedOffset }, 900);
+      };
+      scrollToPos(scrollValue(), () => {
+        cantScrollHeader = false;
       });
     }
   });

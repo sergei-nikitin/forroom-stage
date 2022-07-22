@@ -16,25 +16,17 @@ function forroom_scripts()
     wp_enqueue_script('swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.js', array(), '1.0.0', true);
    
     if (is_page_template(array('page-packet-solutions.php'))) {
-        // wp_enqueue_style('btstrp', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array('main'));
-        // wp_enqueue_style('new-styles', get_template_directory_uri().'/css/main_2.css', array('main'));
         wp_enqueue_script('swiper8', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array(), true);
-        // wp_enqueue_script('new-inputmask', get_template_directory_uri().'/source/js-redesign/inputmask.min.js', array(), '1.0.0',
-        // true);
         wp_enqueue_script('rellax', 'https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js', array(), '1.0.0', true);
-        // wp_enqueue_script('mansory', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), '1.0.0', true);
-        // wp_enqueue_script('new-lightgallery', get_template_directory_uri().'/source/js-redesign/lightgallery.min.js', array(), true);
-        // wp_enqueue_script('new-lg-thumbnail', get_template_directory_uri().'/source/js-redesign/lg-thumbnail.min.js', array(), true);
-        // wp_enqueue_script('new-lg-fullscreen', get_template_directory_uri().'/source/js-redesign/lg-fullscreen.min.js', array(), true);
         wp_enqueue_script('new-lg-sections', get_template_directory_uri().'/source/js-redesign/lightgallery-sections.js', array(), true);
         wp_enqueue_script('new-script', get_template_directory_uri().'/source/js-redesign/script.js', array(), true);
           wp_enqueue_script('header-animation', get_template_directory_uri().'/source/js-redesign/header-animation.js', array(), '1.0.0',
         true);
-        wp_enqueue_script('repair-section', get_template_directory_uri().'/source/js-redesign/repair-section.js', array(), true);
         wp_enqueue_script('about-slider', get_template_directory_uri().'/source/js-redesign/about-slider.js', array(), true);
         wp_enqueue_script('offers-slider', get_template_directory_uri().'/source/js-redesign/offers-slider.js', array(),  true);
         wp_enqueue_script('visual-section', get_template_directory_uri().'/source/js-redesign/visual-section.js', array(), true);
-        wp_enqueue_script('payment-scripts', get_template_directory_uri().'/source/js-redesign/payment-section.js', array(), true);    
+        wp_enqueue_script('payment-scripts', get_template_directory_uri().'/source/js-redesign/payment-section.js', array(), true);   
+        wp_enqueue_script('unique-section', get_template_directory_uri().'/source/js-redesign/unique-section.js', array('swiper8'), '1.0.0', true); 
         wp_enqueue_script('new-ajax', get_template_directory_uri().'/source/js-redesign/ajax-form.js', array(), true);  
     }
     if (is_page_template(array('page-about.php', 'page-about-ua.php', 'page-about-en.php'))) {
@@ -119,8 +111,8 @@ function forroom_scripts()
          wp_enqueue_script('rellax', 'https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js', array(), '1.0.0', true);
          wp_enqueue_script('new-script', get_template_directory_uri().'/source/js-redesign/script.js', array(), '1.0.0',
         true);
-        wp_enqueue_script('repair-scripts', get_template_directory_uri().'/source/js-redesign/repair-section.js', array(), '1.0.0',
-        true);
+        // wp_enqueue_script('repair-scripts', get_template_directory_uri().'/source/js-redesign/repair-section.js', array(), '1.0.0',
+        // true);
         wp_enqueue_script('payment-scripts', get_template_directory_uri().'/source/js-redesign/payment-section.js', array(), '1.0.0',
         true);
          wp_enqueue_script('team-scripts', get_template_directory_uri().'/source/js-redesign/team-section.js', array(), '1.0.0',
@@ -310,6 +302,14 @@ function forroom_scripts()
         true);
     wp_enqueue_script('imask', 'https://unpkg.com/imask', array(), '1.0.0', true);
     wp_enqueue_script('myinputmask', get_template_directory_uri().'/source/js-redesign/myInputMask.js', array(), '1.0.0', true);
+
+
+     wp_enqueue_style('inl', get_template_directory_uri().'/css/intlTelInput.css', array('new-styles'));
+     wp_enqueue_style('demo', get_template_directory_uri().'/css/demo.css', array('new-styles'));
+     wp_enqueue_script('IntelTelInput', get_template_directory_uri().'/source/input-js/intlTelInput.js', array());
+     wp_enqueue_script('utilsIntelTelInput', get_template_directory_uri().'/source/input-js/utils.js', array());
+    wp_enqueue_script('intelScript', get_template_directory_uri().'/source/js-redesign/intlScript.js', array(), '1.0.0', true);
+   
 }
 
 // регистрируем несколько облаастей меню

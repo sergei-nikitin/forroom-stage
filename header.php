@@ -9,12 +9,13 @@
 	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
 	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-	<!-- <link rel="stylesheet" href="css/main.css"> -->
 
 	<meta name="format-detection" content="telephone=no">
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+
+
 
 	<!-- Favicon -->
 </head>
@@ -100,6 +101,21 @@
 		margin-top: 5px;
 		transform: rotate(90deg);
 	}
+
+	.block-input{
+		display:flex;
+		flex-direction: column;
+
+	}
+
+
+		.iti-flag {background-image: url("<?php echo get_template_directory_uri() ?>/source/new-img/flags.png");}
+
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			.iti-flag {background-image: url("<?php echo get_template_directory_uri() ?>/source/new-img/flags@2x.png");}
+		}
+
+
 	</style>
 		<div class="wrapper">
 		<!-- Nav -->

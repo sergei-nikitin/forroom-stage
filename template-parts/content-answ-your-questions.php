@@ -13,13 +13,17 @@
                         <input type="hidden" name="title" value="Форма главная подвал + о нас (ответим на вопросы)">
 						 <input id="page-url" type="hidden" name="page-url" value="http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">						
 						<div class="block-input block-input_white">
-							<input required type="tel" name="phone" data-tel-input placeholder="+380 (__) ___ - __ - __" maxlength="20"
-          minlength="8"><!-- class="success error" -->
+								<input id="intl-tel" type="tel" name="phone" />
+								<span id="valid-msg" class="hide"></span>
+								<span id="error-msg" class="hide"></span>
+							<!-- <input required type="tel" name="phone" data-tel-input placeholder="+380 (__) ___ - __ - __" maxlength="20"
+          minlength="8"> -->
+					<!-- class="success error" -->
 							<p class="block-input__text">Неверный формат номера</p>
 						</div>
 					
 						<div class="doubt__form-btn">
-							<button type="submit" class="btn btn_big-fill">обратная связь</button>
+							<button type="submit" class="btn btn_big-fill btn-submit">обратная связь</button>
 							<!-- <button type="submit" class="btn btn_big-fill" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({'event': 'form-main'})">обратная связь</button> -->
 						</div>
 

@@ -17,12 +17,17 @@
 						</ul>
 					</div>
 					<form data-analitic-designer="form-footer" action="<?php echo admin_url('admin-ajax.php') ?>" method="post" class="designer__form ajax_form">
+					
 					 <input type="hidden" name="action" value="answer_your_questions">
            <input type="hidden" name="title" value="Форма обратной связи (Выезд дизайнера)">
 					 <input id="page-url" type="hidden" name="page-url" value="http://<?php echo $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
 						<label>
 							<div class="block-input">
-								<input required type="tel" name="phone" data-tel-input placeholder="+380 (__) ___ - __ - __">
+								<input id="intl-tel" type="tel" name="phone" />
+								<span id="valid-msg" class="hide"></span>
+								<span id="error-msg" class="hide"></span>
+								<!-- <input required type="tel" name="phone" data-tel-input placeholder="+380 (__) ___ - __ - __" maxlength="20"
+          minlength="8"> -->
 								<p class="block-input__text">Неверный формат номера</p>
 							</div>
 						</label>
@@ -43,7 +48,7 @@
 							</div>
 						</label>
 					
-						<button type="submit" class="btn btn_big">подать заявку</button>
+						<button  type="submit" class="btn btn_big btn-submit">подать заявку</button>
 						<!-- <button type="submit" class="btn btn_big" onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({'event': 'form-footer'})">подать заявку</button> -->
 					</form>
 				</div>

@@ -162,6 +162,58 @@ Template Name: Пакетные решения RU
 			</div>
 		</header>
 
+		<!-- Unique -->
+
+		<section class="unique">
+			<div class="lines anim-item lines_two-space-between-half-bottom">
+				<span></span>
+				<span></span>
+			</div>
+
+			<div class="unique__inner">
+				<div class="title anim-item">
+					<h2 class="title__title">унікальна пропозиція</h2>
+					<span class="title__text">унікальна пропозиція</span>
+				</div>
+
+				<div class="unique__body">
+					<div class="unique__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide ib">
+									<img src="<?php echo get_template_directory_uri() ?>/source/new-img/solutions/visual/1.jpg" alt="order_2" class="ib_use">
+								</div>
+								<div class="swiper-slide ib">
+									<img src="<?php echo get_template_directory_uri() ?>/source/new-img/solutions/visual/2.jpg" alt="order_2" class="ib_use">
+								</div>
+								<div class="swiper-slide ib">
+									<img src="<?php echo get_template_directory_uri() ?>/source/new-img/solutions/visual/3.jpg" alt="order_2" class="ib_use">
+								</div>
+								<div class="swiper-slide ib">
+									<img src="<?php echo get_template_directory_uri() ?>/source/new-img/solutions/visual/4.jpg" alt="order_2" class="ib_use">
+								</div>
+							</div>
+						</div>
+
+						<div class="unique__btns">
+							<div class="unique__btn swiper-button-prev"><span class="iconify" data-icon="la:chevron-left"></span></div>
+							<div class="unique__btn swiper-button-next"><span class="iconify" data-icon="la:chevron-right"></span></div>
+						</div>
+					</div>
+
+					<div class="unique__content">
+						<p class="unique__text">Ми розробили на сьогоднішній день <span>унікальну пропозицію з ремонту</span> квартир для здачі в оренду.</p>
+						<p class="unique__text">У даному пакеті використані доступні матеріали в сьогоднішніх реаліях і які добре зарекомендували себе за час багаторічного використання.</p>
+						<p class="unique__text">Квартира виконана переважно в <span>скандинавському стилі</span>. Такий інтер'єр легкий у застосуванні, а також приємний для проживання, практичний у використанні, оскільки поєднуються природні матеріали, елементи живої природи — штучна трава, каміння, аксесуари із кольору натурального дерева.</p>
+						<p class="unique__text"><span>Основа концепції</span> — простота, присутність білого кольору, світле дерево, ненасичені (брудні) акцентні кольори. Використовуючи в інтер'єрі кілька кольорів та матеріалів, досягли єдиного образу та стилістики квартири.</p>
+						<p class="unique__text"><span>Домінуючий колір квартири</span> — теплі відтінки сірого, на фоні яких добре виділяються білі плями декору та фасадів меблів, дверей та плінтуса.</p>
+						<p class="unique__text">Зручно, функціонально, сучасно, просто, доступно, затишно, і головне з душею -принцип дизайну в скандинавському стилі для вашої квартири.</p>
+						<p class="unique__text"><span>Все можливо!</span> Жити зі смаком, за прийнятну пропозицію.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Stili -->
 
 		<section id="pack" class="stili stili_novostroi" id="stili">
@@ -424,7 +476,7 @@ Template Name: Пакетные решения RU
 
 		<!-- About -->
 
-		<section class="about about_task about_task-visual about_task-reverse">
+		<!-- <section class="about about_task about_task-visual about_task-reverse">
 			<div class="lines anim-item lines_repair">
 				<span></span>
 				<span></span>
@@ -452,11 +504,11 @@ Template Name: Пакетные решения RU
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Description -->
 
-		<section class="description">
+		<!-- <section class="description">
 			<div class="lines anim-item lines_repair">
 				<span></span>
 				<span></span>
@@ -508,7 +560,7 @@ Template Name: Пакетные решения RU
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Order -->
 
