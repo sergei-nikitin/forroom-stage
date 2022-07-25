@@ -16,12 +16,6 @@ inputs.forEach((input) => {
       'https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js',
     preferredCountries: ['ua', 'pl', 'ro', 'gb', 'fr', 'md'],
     separateDialCode: true,
-    // customPlaceholder: function (
-    //   selectedCountryPlaceholder,
-    //   selectedCountryData,
-    // ) {
-    //   return '(__) __ __ ___';
-    // },
   });
 
   const reset = function () {
@@ -36,6 +30,7 @@ inputs.forEach((input) => {
       reset();
       if (input.value.trim()) {
         if (iti.isValidNumber()) {
+          input.value = iti.getNumber();
           validMsg.classList.remove('hide');
           btnSubmit.disabled = false;
         } else {
