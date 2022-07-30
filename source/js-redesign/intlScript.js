@@ -26,6 +26,17 @@ inputs.forEach((input) => {
   };
 
   btnsSubmit.forEach((btnSubmit) => {
+    input.addEventListener('input', function () {
+      reset();
+      if (input.value.trim()) {
+        if (iti.isValidNumber()) {
+          input.value = iti.getNumber();
+          btnSubmit.disabled = false;
+        } else {
+          btnSubmit.disabled = true;
+        }
+      }
+    });
     input.addEventListener('blur', function () {
       reset();
       if (input.value.trim()) {
